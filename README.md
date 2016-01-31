@@ -25,18 +25,18 @@ You can either:
 For everyone who just wants to get Sirius running and not change anything afterwards.
 This image works fine on an original Raspberry Pi, if you have a Raspberry Pi 2 it's recommneded to use the install script.
 
-Download and flash [this image](http://imageurl) to your SD card.
+Download and flash [this image](https://github.com/beyondio/LittlePrinterPi/releases/download/v0.1-alpha.1/LPPI_SIRIUS_v0.1-alpha.1.img.zip) to your SD card.
 Boot the Raspberry Pi.
 
 Defaul login details : `ssh -l root littleprinterpi.local` to connect to your Pi.
-Username : `root` 
+Username : `root`
 Password : `raspbian`
 
-Recommended : 
+Recommended :
 run `passwd` to set a different password.
 run `dpkg-reconfigure tzdata` to configure your timezone
 
-Optional : 
+Optional :
 You can run `raspi-config` if you want to expand your filesystem to use the full capacity of the SD card and to overclock your Raspberry Pi.  
 You will be asked to reboot for the changes to take effect.
 
@@ -54,14 +54,14 @@ You can of course install another flavour of Linux on your Raspberry Pi if you p
 - Download the latest release : https://github.com/debian-pi/raspbian-ua-netinst/releases/latest
 - Unzip the downloaded file
 - Insert and format your SD card as FAT32 (MS-DOS on Mac OS X) and extract the installer files in the root of the freshly formatted filesystem.
-- Insert the SD card from your PC into your Raspberry Pi. You can just power on your Pi and cross your fingers.  The activity LED shoud start blinking 
+- Insert the SD card from your PC into your Raspberry Pi. You can just power on your Pi and cross your fingers.  The activity LED shoud start blinking
 - Wait for about 15 minutes, while Raspbian downloads and installs itself
 - Find out the IP address of your Raspberry Pi
 - Login via SSH : ssh -l root <raspberry ip address>  and use the default password "raspbian"
 - Set new root password: passwd
 - Configure your default locale: dpkg-reconfigure locales
 If you get these annoying perl: warning: Setting locale failed errors. `nano /etc/default/locale` and add `LANGUAGE=en_US:en` & `LC_ALL=en_US.UTF-8` lines to the file.  Or the locale of your chosing.
-You  might need to reboot for these errors to stop now. 
+You  might need to reboot for these errors to stop now.
 - Configure your timezone: `dpkg-reconfigure tzdata`
 - Optional: apt-get install raspi-copies-and-fills for improved memory management performance.
 - Optional : apt-get install raspi-config && raspi-config if you want to expand your filesystem to use the full capacity of the SD card and to overclock your Raspberry Pi.  You will be asked to reboot for the changes to take effect
@@ -72,10 +72,10 @@ If you want to use a simple domain name like `litteprinterpi.local` do a `apt-ge
 ##### Now let's use the install script to get everything up and running:
 
 ```
-wget http://xxx/LittlePrinterPi.sh -P /tmp/ && chmod 755 /tmp/LittlePrinterPi.sh && sh /tmp/LittlePrinterPi.sh && rm /tmp/LittlePrinterPi.sh
+wget https://github.com/beyondio/LittlePrinterPi/releases/download/v0.1-alpha.1/LittlePrinterPi.sh -P /tmp/ && chmod 755 /tmp/LittlePrinterPi.sh && sh /tmp/LittlePrinterPi.sh && rm /tmp/LittlePrinterPi.sh
 ```
 
-The script will install Sirius in `/opt/sirius` 
+The script will install Sirius in `/opt/sirius`
 
 This will take ... ages ... and will show lots of warnings, which we'll ignore for now.  
 When the script is finished, it will ask to delete itself.
@@ -113,5 +113,5 @@ Now you can follow [heko's guide](https://gist.github.com/hako/f8944cfa7b8fb8115
 
 ### Credits
 
-- [Matt Web](https://github.com/genmon/) for providing a lifeline for our Little Printers aka [Sirius](https://github.com/genmon/sirius). 
+- [Matt Web](https://github.com/genmon/) for providing a lifeline for our Little Printers aka [Sirius](https://github.com/genmon/sirius).
 - [Hako](https://github.com/hako) for this [great guide](https://gist.github.com/hako/f8944cfa7b8fb8115f6d) upon which these image and scripts are largely based.
