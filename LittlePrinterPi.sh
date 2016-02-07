@@ -1,7 +1,7 @@
 #!/bin/sh
 echo 'Installing sirius - alternative backend for the Little Printer'
 echo 'This might take a while ...'
-LIST_OF_APPS="git python-pip libpq-dev libfreetype6-dev fontconfig libgstreamer0.10-dev python-dev" #List of prerequisite
+LIST_OF_APPS="apt-utils git python-pip libpq-dev libfreetype6-dev fontconfig libgstreamer0.10-dev python-dev" #List of prerequisite
 SIRIUS_PATH="/opt/sirius" #Set installation path for Sirius
 export SIRIUS_PATH=$SIRIUS_PATH #To make sure we keep track where sirius was installed
 echo 'SIRIUS_PATH='$SIRIUS_PATH >> /etc/environment #Make the sirius path an environment variable
