@@ -72,7 +72,7 @@ If you want to use a simple domain name like `litteprinterpi.local` do a `apt-ge
 ##### Now let's use the install script to get everything up and running:
 
 ```
-wget https://github.com/beyondio/LittlePrinterPi/releases/download/v0.1-alpha.1/LittlePrinterPi.sh -P /tmp/ && chmod 755 /tmp/LittlePrinterPi.sh && sh /tmp/LittlePrinterPi.sh && rm /tmp/LittlePrinterPi.sh
+wget https://github.com/beyondio/LittlePrinterPi/releases/download/v0.1-alpha.1/LittlePrinterPi.sh -N -P /tmp/ && source /tmp/LittlePrinterPi.sh && rm /tmp/LittlePrinterPi.sh
 ```
 
 The script will install Sirius in `/opt/sirius`
