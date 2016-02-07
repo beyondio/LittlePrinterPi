@@ -23,7 +23,7 @@ mkdir -p $WORKON_HOME
 mkvirtualenv lpenv
 workon lpenv
 echo 'Cloning the sirius GIT repo'
-git clone https://github.com/genmon/sirius.git $SIRIUS_PATH
+git clone https://github.com/beyondio/sirius.git $SIRIUS_PATH
 echo 'Installing all the required packages for sirius via pip'
 pip install -r $SIRIUS_PATH/requirements.txt
 echo 'Upgrading the sirius Postsql database'
