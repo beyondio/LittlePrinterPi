@@ -44,7 +44,7 @@ Sirius should start on boot and you should be able access it at
 
 `http://littleprinterpi.local:5000/`
 
-Now you can follow [heko's guide](https://gist.github.com/hako/f8944cfa7b8fb8115f6d#step-5) from Step 5 and onwards to connect your Little Printer to you LittePrinterPi and start printing.
+Now you can follow [hako's guide](https://gist.github.com/hako/f8944cfa7b8fb8115f6d#step-5) from Step 5 and onwards to connect your Little Printer to you LittePrinterPi and start printing.
 
 #### A lot more time consuming: the install script
 
@@ -109,7 +109,7 @@ web.1  | DEBUG:geventwebsocket.handler:Initializing WebSocket
 web.1  | DEBUG:geventwebsocket.handler:Validating WebSocket request
 ```
 
-Now you can follow [heko's guide](https://gist.github.com/hako/f8944cfa7b8fb8115f6d#step-5) from Step 5 and onwards to connect your Little Printer to you LittePrinterPi and start printing.
+Now you can follow [hako's guide](https://gist.github.com/hako/f8944cfa7b8fb8115f6d#step-5) from Step 5 and onwards to connect your Little Printer to you LittePrinterPi and start printing.
 
 ### Credits
 
